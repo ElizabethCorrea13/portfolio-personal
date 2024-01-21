@@ -1,0 +1,95 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+section{
+    padding: 170px 200px;
+}
+
+
+/*MENU*/
+nav ul {
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+    background-color: #213555;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+    margin-right: 50px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.4s;
+    border-radius: 15px;
+}
+
+nav a:hover {
+    background-color: #2d4163;
+    padding: 21px 16px;
+}
+
+
+/*SOBRE MI*/
+.about-div {
+    padding: 40px 40px;
+    border: 1px solid #E5D283;
+    border-radius: 50px;
+    background: linear-gradient(to right, #1b2a44, #2d4163);
+}
+
+#about{
+    color: #fff;
+    background-color: #2d4163;
+    display: block;
+    text-align: center;
+}
+
+/*TECNOLOGIAS*/
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 60px; /* Espacio de 10 píxeles entre filas */
+    grid-column-gap: 20px;
+    justify-content: center; /* Centra las columnas horizontalmente */
+}
+
+.contenedor-imagenes img {
+    width: 100px; /* O ajusta el tamaño según tus necesidades */
+    height: 100px;
+}
+
+#technologies {
+    color: #fff;
+    background-color: #213555;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
