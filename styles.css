@@ -1,13 +1,12 @@
+/*GENERAL*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.centrado {
-    position: absolute;
-    top: 50%;
-    left: 50%;
 }
 
 section{
@@ -15,37 +14,90 @@ section{
 }
 
 
-/*MENU*/
-nav ul {
-    list-style: none;
-    padding: 8px;
-    margin: 0;
-    background-color: #213555;
-    overflow: hidden;
+/* MENÚ */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: rgba(31, 31, 68, 0.15);
+    backdrop-filter: blur(50px);
+    padding: 14px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background 0.5s ease, backdrop-filter 0.5s ease;
 }
 
-nav li {
-    float: right;
-    margin-right: 50px;
-}
-
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 15px;
+.name {
+    font-size: 22px;
+    color: #fff;
     text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.4s;
-    border-radius: 15px;
+    font-weight: 520;
+    margin-left: 35px;
 }
 
-nav a:hover {
-    background-color: #2d4163;
-    padding: 21px 16px;
+span {
+    font-weight: 800;
+    color: #E5D283;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    margin-right: 35px;
+    transition: color 0.5s ease, padding-right 0.5s ease;
+}
+
+.navbar a:hover {
+    color: #E5D283;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 750px) {
+    .name {
+        margin:auto;
+        font-size: 20px;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(31, 31, 68, 0.15);
+        backdrop-filter: blur(20px);
+        align-items:flex-start;
+    }
+
+    .navbar a{
+        margin-left: 10px;
+        padding: 10px ;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #E5D283;
+    }
+
 }
 
 
+/*SIGUE*/
 /*SOBRE MI*/
 .about-div {
     padding: 40px 40px;
@@ -56,7 +108,7 @@ nav a:hover {
 
 #about{
     color: #fff;
-    background-color: #2d4163;
+    background-color: #1a263b;
     display: block;
     text-align: center;
 }
@@ -71,22 +123,36 @@ nav a:hover {
 }
 
 .contenedor-imagenes img {
-    width: 100px; /* O ajusta el tamaño según tus necesidades */
-    height: 100px;
+    width: 70px; /* O ajusta el tamaño según tus necesidades */
+    height: 70px;
 }
 
 #technologies {
+    color: #fff;
+    background-color: #152846;
+}
+
+
+/*PROYECTOS*/
+#projects {
+    color: #fff;
+    background-color: #2d4163;
+}
+
+
+/*CONTACTO*/
+#contact {
     color: #fff;
     background-color: #213555;
 }
 
 
-
+/*FOOTER*/
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #0e1625;
+    color: #E5D283;
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 a {

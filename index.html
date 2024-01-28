@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Tu Nombre - Portfolio</title>
+    <title>Elizabeth Correa - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <nav>
-        <ul>
-            <li><a href="#contact">Contacto</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#technologies">Tecnologías</a></li>
-            <li><a href="#about">Sobre mí</a></li>
-        </ul>
-    </nav>
+<body> 
+    <!--BARRA DE NAVEGACION-->
+    <header class="header">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <a href="#" class="name">Elizabeth <span>Correa</span></a>
 
+        <nav class="navbar">
+            <a href="#about" onclick="closeMenu()">Sobre mí</a>
+            <a href="#technologies" onclick="closeMenu()">Tecnologías</a>
+            <a href="#projects" onclick="closeMenu()">Proyectos</a>
+            <a href="#contact" onclick="closeMenu()">Contacto</a>
+        </nav>
+    </header>
+    
+
+ <!--sigue-->
     <section id="about">
         <div style="width: 50%; float: left;" class="about-div">
             <h2>Hola!</h2>
@@ -36,16 +43,16 @@
     <section id="technologies">
         <h2>Tecnologías</h2>
         <div class="contenedor-imagenes">
-            <img src="imagenes/html.png" alt="img HTML">
-            <img src="imagenes/css.png" alt="img css">
-            <img src="imagenes/js.png" alt="img js">
-            <img src="imagenes/git.png" alt="img git">
-            <img src="imagenes/github.png" alt="img github">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />  
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
             <img src="imagenes/net.png" alt="img .net">
-            <img src="imagenes/c++.png" alt="img c++">
-            <img src="imagenes/c.png" alt="img c#">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" />
             <img src="imagenes/sql.png" alt="img sql">
-            <img src="imagenes/sqlServer.png" alt="img sqlServer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" />
         </div>
     </section>
 
@@ -65,7 +72,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Elizabeth Correa. Todos los derechos reservados.</p>
     </footer>
 
     <script src="app.js"></script>
